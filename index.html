@@ -1,196 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sircont | Asesoría Contable y Tributaria</title>
 
-  <title>Sircont | Asesorías Contables</title>
+<meta name="description" content="Soluciones contables, tributarias y administrativas en Colombia.">
+<meta name="keywords" content="contabilidad, impuestos, DIAN, asesoría contable">
 
-  <!-- SEO -->
-  <meta name="description" content="Servicios contables y asesorías tributarias en Colombia. Expertos en contabilidad para empresas y emprendedores.">
-  <meta name="keywords" content="contabilidad, asesoría contable, impuestos, DIAN, contadores Colombia">
-  <meta name="author" content="Sircont">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-    }
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+color:#333;
+}
 
-    /* MENU */
-    header {
-      background: #0d47a1;
-      padding: 15px 40px;
-    }
+/* HEADER */
+header{
+background:white;
+padding:10px 40px;
+border-bottom:1px solid #ddd;
+}
 
-    .menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-    .logo {
-      height: 55px;
-    }
+.logo{
+height:80px;
+}
 
-    .menu ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
+/* REDES */
+.redes a{
+margin-left:15px;
+color:#0d47a1;
+font-size:20px;
+}
 
-    .menu a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* MENU */
+nav{
+display:flex;
+justify-content:center;
+margin-top:10px;
+}
 
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 90px 20px;
-      background: #f5f7fa;
-    }
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#0d47a1;
+font-weight:bold;
+}
 
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
+/* HERO */
+.hero{
+text-align:center;
+padding:80px 20px;
+background:#f5f7fa;
+}
 
-    .boton {
-      background: #0d47a1;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.hero h1{
+font-size:38px;
+}
 
-    /* SERVICIOS */
-    #servicios {
-      padding: 50px 20px;
-      text-align: center;
-    }
+/* SERVICIOS */
+.servicios{
+padding:50px 20px;
+text-align:center;
+}
 
-    .servicios {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
+.servicios-grid{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+margin-top:30px;
+}
 
-    .servicios div {
-      background: #f0f0f0;
-      padding: 25px;
-      border-radius: 10px;
-      width: 280px;
-    }
+.card{
+background:#f0f0f0;
+padding:25px;
+border-radius:10px;
+width:280px;
+cursor:pointer;
+transition:0.3s;
+}
 
-    /* NOSOTROS */
-    #nosotros {
-      background: #eef2f7;
-      padding: 50px 20px;
-      text-align: center;
-    }
+.card:hover{
+transform:scale(1.05);
+background:#e3eaf5;
+}
 
-    /* CONTACTO */
-    #contacto {
-      padding: 50px 20px;
-      text-align: center;
-    }
+/* QUIENES SOMOS */
+.nosotros{
+background:#eef2f7;
+padding:50px 20px;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
 
-    /* WHATSAPP */
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      font-size: 28px;
-      padding: 15px;
-      border-radius: 50%;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
+/* DETALLES */
+.detalle{
+display:none;
+max-width:800px;
+margin:30px auto;
+background:#fff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:left;
+}
 
-    /* RESPONSIVE */
-    @media(max-width:768px){
-      .menu ul{
-        display:none;
-      }
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+font-size:55px;
+color:#25D366;
+text-decoration:none;
+}
 
-      .hero h1{
-        font-size: 28px;
-      }
-    }
-  </style>
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h1{font-size:28px;}
+.logo{height:65px;}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <nav class="menu">
-    <!-- CAMBIA logo.png por tu archivo -->
-    <img src="nuevo logo Sircont fondo Blanco.png" alt="Sircont Logo" class="logo">
 
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+<div class="topbar">
+<img src="logo.png" class="logo">
+
+<div class="redes">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
 </header>
 
-<section id="inicio" class="hero">
-  <h1>Asesorías Contables y Tributarias</h1>
-  <p>Soluciones confiables para empresas y emprendedores</p>
-  <br>
-  <a href="#contacto" class="boton">Solicitar asesoría</a>
+<section class="hero">
+<h1>Soluciones Contables y Tributarias Profesionales</h1>
+<p>Apoyamos el crecimiento financiero de tu empresa</p>
 </section>
 
-<section id="servicios">
-  <h2>Nuestros Servicios</h2>
+<section id="servicios" class="servicios">
+<h2>Servicios</h2>
 
-  <div class="servicios">
-    <div>
-      <h3>Contabilidad</h3>
-      <p>Manejo contable profesional y actualizado.</p>
-    </div>
+<div class="servicios-grid">
 
-    <div>
-      <h3>Declaraciones Tributarias</h3>
-      <p>Cumple con la DIAN sin preocupaciones.</p>
-    </div>
+<div class="card" onclick="mostrar('software')">
+<h3>Software contables y administrativos</h3>
+</div>
 
-    <div>
-      <h3>Asesoría Empresarial</h3>
-      <p>Optimiza tus finanzas y toma mejores decisiones.</p>
-    </div>
-  </div>
+<div class="card" onclick="mostrar('asesoria')">
+<h3>Asesoría Contable y Tributaria</h3>
+</div>
+
+<div class="card" onclick="mostrar('servicios')">
+<h3>Servicios Contables</h3>
+</div>
+
+</div>
 </section>
 
-<section id="nosotros">
-  <h2>¿Por qué elegirnos?</h2>
-  <p>
-    Brindamos asesoría contable confiable, oportuna y adaptada a las necesidades
-    de cada cliente.
-  </p>
+<div id="software" class="detalle">
+✔ Implementación de software administrativo o contables<br>
+✔ Facturación electrónica<br>
+✔ Control de inventarios<br>
+✔ Reportes financieros en tiempo real<br>
+✔ Capacitación en el uso del sistema
+</div>
+
+<div id="asesoria" class="detalle">
+Contabilidad para empresas y emprendedores<br>
+✔ Elaboración de estados financieros<br>
+✔ Registro y organización contable<br>
+✔ Análisis financiero<br><br>
+
+🧾 <strong>Asesoría Tributaria</strong><br>
+✔ Declaración de renta personas naturales y jurídicas<br>
+✔ Impuestos nacionales y locales<br>
+✔ Planeación tributaria<br>
+✔ Actualización del RUT y resoluciones<br>
+✔ Respuesta a requerimientos de la DIAN
+</div>
+
+<div id="servicios" class="detalle">
+Servicios contables integrales adaptados a las necesidades de tu empresa.
+</div>
+
+<section id="nosotros" class="nosotros">
+<h2>QUIÉNES SOMOS</h2>
+<p>
+En Sircont brindamos soluciones integrales en gestión administrativa, contable y tributaria para empresas, emprendedores y profesionales independientes.<br><br>
+Nuestro compromiso es ayudarte a mantener tus finanzas organizadas, cumplir con las obligaciones fiscales y mejorar la toma de decisiones mediante herramientas tecnológicas y asesoría profesional confiable.<br><br>
+Trabajamos con responsabilidad, confidencialidad y enfoque en el crecimiento de nuestros clientes.
+</p>
 </section>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>📞 Teléfono: 3016546741</p>
-  <p>📧 Email: comercial@sircont.com</p>
-  <p>📍 Colombia</p>
+<section id="contacto" class="servicios">
+<h2>Contacto</h2>
+<p>📞 301 654 6741</p>
+<p>📍 Colombia</p>
 </section>
 
-<!-- BOTON WHATSAPP -->
-<a href="https://wa.me/573016546741" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/573016546741" class="whatsapp" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+function mostrar(id){
+document.querySelectorAll('.detalle').forEach(e=>e.style.display='none');
+document.getElementById(id).style.display='block';
+window.scrollTo({top:document.getElementById(id).offsetTop-100,behavior:'smooth'});
+}
+</script>
 
 </body>
 </html>
