@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sircont | Asesoría Contable y Tributaria</title>
 
-<title>Sircont | Soluciones Contables Inteligentes</title>
+<meta name="description" content="Soluciones contables, factura electronica, inventario, web,  tributarias y administrativas en Colombia.">
+<meta name="keywords" content="contabilidad, impuestos, DIAN, asesoría contable, desarrollo software, web">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body{
 margin:0;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-color:#1a1a1a;
-background:#fafafa;
+font-family:Arial, sans-serif;
+color:#333;
 }
+
 
 /* HEADER */
 header{
 background:white;
-padding:15px 40px;
-position:sticky;
-top:0;
-z-index:999;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
+padding:10px 40px;
+border-bottom:1px solid #ddd;
 }
 
 .topbar{
@@ -34,124 +32,117 @@ align-items:center;
 }
 
 .logo{
-height:90px;
+height:150px;
+}
+
+/* REDES */
+.redes a{
+margin-left:30px;
+color:#0d47a1;
+font-size:20px;
+}
+
+/* MENU */
+nav{
+display:flex;
+justify-content:center;
+margin-top:10px;
 }
 
 nav a{
 margin:0 15px;
 text-decoration:none;
 color:#0d47a1;
-font-weight:600;
-}
-
-nav a:hover{
-color:#1565c0;
-}
-
-/* HERO PREMIUM */
-.hero{
-background:linear-gradient(rgba(13,71,161,0.85),rgba(13,71,161,0.85)),url('fondoWebSircont.jpg');
-background-size:cover;
-background-position:center;
-color:white;
-text-align:center;
-padding:140px 20px;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:20px;
-opacity:0.9;
-margin-bottom:30px;
-}
-
-.cta{
-background:#ffb300;
-color:#000;
-padding:14px 30px;
-border-radius:30px;
-text-decoration:none;
-font-weight:700;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+font-weight:bold;
+padding:6px 10px;
+border-radius:6px;
 transition:0.3s;
 }
 
-.cta:hover{
-transform:translateY(-2px);
+/* efecto hover profesional */
+nav a:hover{
+background:#0d47a1;
+color:white;
 }
 
-/* VIDEO */
-.video{
-max-width:800px;
-margin:60px auto;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 20px 40px rgba(0,0,0,0.2);
+/* HERO */
+.hero{
+text-align:center;
+padding:120px 20px;
+background-image:url('fondoWebSircont.jpg');
+background-size:cover;
+background-position:center;
+color:white;
+position:relative;
 }
 
-.video iframe{
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
 width:100%;
-height:450px;
-border:0;
+height:100%;
+background:rgba(0,0,0,0.55);
+}
+
+.hero h1,
+.hero p{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:38px;
 }
 
 /* SERVICIOS */
 .servicios{
-padding:80px 20px;
+padding:50px 20px;
 text-align:center;
 }
 
-.servicios h2{
-font-size:32px;
-margin-bottom:40px;
-}
-
-.grid{
+.servicios-grid{
 display:flex;
 flex-wrap:wrap;
-gap:30px;
+gap:25px;
 justify-content:center;
+margin-top:30px;
 }
 
 .card{
-background:white;
-padding:35px;
-width:300px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+background:#f0f0f0;
+padding:25px;
+border-radius:10px;
+width:280px;
+cursor:pointer;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
-box-shadow:0 20px 40px rgba(0,0,0,0.15);
+transform:scale(1.05);
+background:#e3eaf5;
 }
 
-/* NOSOTROS */
+/* QUIENES SOMOS */
 .nosotros{
-background:white;
-padding:80px 20px;
+background:#eef2f7;
+padding:50px 20px;
+text-align:center;
 max-width:900px;
 margin:auto;
-text-align:center;
-line-height:1.7;
 }
 
-/* CONTACTO */
-.contacto{
-background:#0d47a1;
-color:white;
-padding:80px 20px;
-text-align:center;
-}
-
-.contacto iframe{
+/* DETALLES */
+.detalle{
+display:none;
+max-width:800px;
+margin:30px auto;
+background:#fff;
+padding:25px;
 border-radius:10px;
-margin-top:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:left;
 }
 
 /* WHATSAPP */
@@ -161,23 +152,31 @@ bottom:20px;
 right:20px;
 font-size:55px;
 color:#25D366;
+text-decoration:none;
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-.hero h1{font-size:32px;}
-.video iframe{height:250px;}
-.logo{height:60px;}
+.hero h1{font-size:28px;}
+.logo{height:65px;}
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
+
 <div class="topbar">
 <img src="nuevo logo Sircont fondo Blanco.png" class="logo">
+
+<div class="redes">
+<a href="https://www.facebook.com/sircontsifra" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/sirfra_sircont_" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://x.com/sircont1" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="https://www.youtube.com/@ContableVisual" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
 
 <nav>
 <a href="#">Inicio</a>
@@ -185,60 +184,109 @@ color:#25D366;
 <a href="#nosotros">Nosotros</a>
 <a href="#contacto">Contacto</a>
 </nav>
-</div>
+
 </header>
 
 <section class="hero">
-<h1>Impulsamos el crecimiento financiero de tu empresa</h1>
-<p>Soluciones contables, tributarias y tecnológicas para decisiones seguras</p>
-<a href="#contacto" class="cta">Agenda asesoría gratuita</a>
-</section>
+<h1>Soluciones en sistemas Contables y Administrativos </h1>
+<p>Apoyamos el crecimiento financiero de tu empresa</p>
+  <section class="video">
+  <h2>Conoce cómo podemos ayudarte</h2>
 
-<div class="video">
-<iframe src="https://www.youtube.com/embed/PlJKBvy_GS4" allowfullscreen></iframe>
-</div>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/PlJKBvy_GS4"
+      title="Video Sircont"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+</section>
 
 <section id="servicios" class="servicios">
-<h2>Nuestros Servicios</h2>
+<h2>Servicios</h2>
 
-<div class="grid">
+<div class="servicios-grid">
 
-<div class="card">
-<h3>Software Contable</h3>
-<p>Implementación, facturación electrónica e inventarios con soporte experto.</p>
+<div class="card" onclick="mostrar('software')">
+<h3>Software contables y administrativos</h3>
 </div>
 
-<div class="card">
-<h3>Asesoría Tributaria</h3>
-<p>Planeación fiscal estratégica y cumplimiento ante la DIAN.</p>
+<div class="card" onclick="mostrar('asesoria')">
+<h3>Asesoría Contable y Tributaria</h3>
 </div>
 
-<div class="card">
-<h3>Contabilidad Integral</h3>
-<p>Control financiero, informes y acompañamiento permanente.</p>
+<div class="card" onclick="mostrar('servicios')">
+<h3>Servicios Contables</h3>
 </div>
 
 </div>
 </section>
 
+<div id="software" class="detalle">
+✔ Implementación de software administrativo o contables<br>
+✔ Facturación electrónica<br>
+✔ Control de inventarios<br>
+✔ Reportes financieros en tiempo real<br>
+✔ Capacitación en el uso del sistema
+</div>
+
+<div id="asesoria" class="detalle">
+Contabilidad para empresas y emprendedores<br>
+✔ Elaboración de estados financieros<br>
+✔ Registro y organización contable<br>
+✔ Análisis financiero<br><br>
+
+🧾 <strong>Asesoría Tributaria</strong><br>
+✔ Declaración de renta personas naturales y jurídicas<br>
+✔ Impuestos nacionales y locales<br>
+✔ Planeación tributaria<br>
+✔ Actualización del RUT y resoluciones<br>
+✔ Respuesta a requerimientos de la DIAN
+</div>
+
+<div id="servicios" class="detalle">
+Servicios contables integrales adaptados a las necesidades de tu empresa.
+</div>
+
 <section id="nosotros" class="nosotros">
-<h2>Quiénes Somos</h2>
+<h2>QUIÉNES SOMOS</h2>
 <p>
-En Sircont ayudamos a empresas y emprendedores a optimizar su gestión financiera mediante soluciones confiables, tecnología y asesoría especializada. Nuestro compromiso es brindar tranquilidad y claridad en cada decisión contable.
+En Sircont brindamos soluciones integrales en gestión administrativa, contable y tributaria para empresas, emprendedores y profesionales independientes.<br><br>
+Nuestro compromiso es ayudarte a mantener tus finanzas organizadas, cumplir con las obligaciones fiscales y mejorar la toma de decisiones mediante herramientas tecnológicas y asesoría profesional confiable.<br><br>
+Trabajamos con responsabilidad, confidencialidad y enfoque en el crecimiento de nuestros clientes.
 </p>
 </section>
 
-<section id="contacto" class="contacto">
-<h2>Hablemos</h2>
-<p>📞 301 654 6741 — Colombia</p>
+<section id="contacto" class="servicios">
+<h2>Contacto</h2>
+<p>📞 301 654 6741</p>
+<p>📍 Colombia</p>
+<p>Déjanos tus datos y te contactaremos pronto.</p>
+  <iframe 
+src="https://docs.google.com/forms/d/e/1FAIpQLScNfESZoWzA0BS7QNOLziQDDnYlaa4vVF2riHynnSW6X1abhQ/viewform?usp=preview" 
+width="100%" 
+height="800" 
+frameborder="0" 
+marginheight="0" 
+marginwidth="0">
+Cargando…
+</iframe>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNfESZoWzA0BS7QNOLziQDDnYlaa4vVF2riHynnSW6X1abhQ/viewform?usp=preview"
-width="100%" height="600"></iframe>
 </section>
 
-<a href="https://wa.me/573016546741" class="whatsapp">
+<a href="https://wa.me/573016546741" class="whatsapp" target="_blank">
 <i class="fab fa-whatsapp"></i>
 </a>
+
+<script>
+function mostrar(id){
+document.querySelectorAll('.detalle').forEach(e=>e.style.display='none');
+document.getElementById(id).style.display='block';
+window.scrollTo({top:document.getElementById(id).offsetTop-100,behavior:'smooth'});
+}
+</script>
 
 </body>
 </html>
