@@ -2,62 +2,195 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sircont | Asesoría Contable</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sircont | Asesorías Contables</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Servicios contables y asesorías tributarias en Colombia. Expertos en contabilidad para empresas y emprendedores.">
+  <meta name="keywords" content="contabilidad, asesoría contable, impuestos, DIAN, contadores Colombia">
+  <meta name="author" content="Sircont">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    /* MENU */
+    header {
+      background: #0d47a1;
+      padding: 15px 40px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 55px;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: #f5f7fa;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .boton {
+      background: #0d47a1;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* SERVICIOS */
+    #servicios {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .servicios {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .servicios div {
+      background: #f0f0f0;
+      padding: 25px;
+      border-radius: 10px;
+      width: 280px;
+    }
+
+    /* NOSOTROS */
+    #nosotros {
+      background: #eef2f7;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* CONTACTO */
+    #contacto {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      font-size: 28px;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      .menu ul{
+        display:none;
+      }
+
+      .hero h1{
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 
-<body style="margin:0;font-family:Arial, sans-serif;background:#f4f6f8;color:#333;">
+<body>
 
-  <!-- ENCABEZADO -->
-  <div style="background:#0a2540;color:white;padding:50px 20px;text-align:center;">
-    <h1 style="margin:0;font-size:40px;">Sircont</h1>
-    <p style="font-size:18px;">Asesoría contable y soluciones empresariales</p>
-  </div>
+<header>
+  <nav class="menu">
+    <!-- CAMBIA logo.png por tu archivo -->
+    <img src="logo.png" alt="Sircont Logo" class="logo">
 
-  <!-- QUIENES SOMOS -->
-  <div style="padding:50px 20px;text-align:center;">
-    <h2>¿Quiénes somos?</h2>
-    <p>Ayudamos a empresas y emprendedores a cumplir sus obligaciones contables y tributarias, optimizando sus recursos y evitando sanciones.</p>
-  </div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- SERVICIOS -->
-  <div style="background:white;padding:50px 20px;text-align:center;">
-    <h2>Nuestros Servicios</h2>
-    <p>✔ Contabilidad para empresas</p>
-    <p>✔ Declaración de impuestos</p>
-    <p>✔ Asesoría tributaria</p>
-    <p>✔ Creación de empresas</p>
-    <p>✔ Nómina y seguridad social</p>
-  </div>
+<section id="inicio" class="hero">
+  <h1>Asesorías Contables y Tributarias</h1>
+  <p>Soluciones confiables para empresas y emprendedores</p>
+  <br>
+  <a href="#contacto" class="boton">Solicitar asesoría</a>
+</section>
 
-  <!-- POR QUE ELEGIRNOS -->
-  <div style="background:#e9eef2;padding:50px 20px;text-align:center;">
-    <h2>¿Por qué elegirnos?</h2>
-    <p>✔ Atención personalizada</p>
-    <p>✔ Cumplimiento normativo garantizado</p>
-    <p>✔ Experiencia y confianza</p>
-    <p>✔ Acompañamiento permanente</p>
-  </div>
+<section id="servicios">
+  <h2>Nuestros Servicios</h2>
 
-  <!-- CONTACTO -->
-  <div style="padding:50px 20px;text-align:center;">
-    <h2>Contáctanos</h2>
-    <p><strong>WhatsApp:</strong> +57 XXX XXX XXXX</p>
-    <p><strong>Email:</strong> info@sircont.com</p>
-    <p><strong>Ubicación:</strong> Colombia</p>
-  </div>
+  <div class="servicios">
+    <div>
+      <h3>Contabilidad</h3>
+      <p>Manejo contable profesional y actualizado.</p>
+    </div>
 
-  <!-- BOTON WHATSAPP -->
-  <div style="text-align:center;margin-bottom:40px;">
-    <a href="https://wa.me/57XXXXXXXXXX" style="background:#25D366;color:white;padding:15px 25px;text-decoration:none;font-size:18px;border-radius:6px;">
-      Escribir por WhatsApp
-    </a>
-  </div>
+    <div>
+      <h3>Declaraciones Tributarias</h3>
+      <p>Cumple con la DIAN sin preocupaciones.</p>
+    </div>
 
-  <!-- PIE -->
-  <div style="background:#0a2540;color:white;text-align:center;padding:15px;">
-    © 2026 Sircont — Todos los derechos reservados
+    <div>
+      <h3>Asesoría Empresarial</h3>
+      <p>Optimiza tus finanzas y toma mejores decisiones.</p>
+    </div>
   </div>
+</section>
+
+<section id="nosotros">
+  <h2>¿Por qué elegirnos?</h2>
+  <p>
+    Brindamos asesoría contable confiable, oportuna y adaptada a las necesidades
+    de cada cliente.
+  </p>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>📞 Teléfono: 3016546741</p>
+  <p>📧 Email: comercial@sircont.com</p>
+  <p>📍 Colombia</p>
+</section>
+
+<!-- BOTON WHATSAPP -->
+<a href="https://wa.me/573001112233" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
